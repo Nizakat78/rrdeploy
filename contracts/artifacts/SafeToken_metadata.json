@@ -1,0 +1,181 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_safeManager",
+						"type": "address"
+					}
+				],
+				"name": "setSafeManager",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawBNB",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SafeToken.sol": "SafeToken"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Context.sol": {
+			"keccak256": "0x18caae9bf95a1dcee7e8e99b19c14cb9465d47e998aa83eff186d4ad58c617c9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://070a140c4f7086c42c5224821d656422e0434b2ec09b21d4278d7bf067226656",
+				"dweb:/ipfs/QmddkoiEqHithTF77LqeAGkGSFWZsXkHyYhhS5UFydZj3x"
+			]
+		},
+		"contracts/IERC20.sol": {
+			"keccak256": "0x526824e7c4ebbd77f2e01d9faf0ea3bb573acfc801b43f2ac8d54a9bf36b7d9c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8d5b5502a559ddee9a7f86d0e7cc0137c5457ed4278cde8b2a831974f8dd788f",
+				"dweb:/ipfs/QmVAH1xU4yb2wUZjefn2eKaB3cnLZSciAtguUSUJygWK8Q"
+			]
+		},
+		"contracts/Ownable.sol": {
+			"keccak256": "0x04a54347e4e3ff9be5ce6f46484f0b214b8f444421631ab4a4ad68612c0850cf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://501aca9bb67ed7b98e687530a3c63ab07f73c2694848920bf9232899be5292d9",
+				"dweb:/ipfs/QmSuBMhLDfBCftbKkujB3CMvzFwBVvqi8gwKU2tZvfjAnw"
+			]
+		},
+		"contracts/SafeToken.sol": {
+			"keccak256": "0x22a5e0e53dad8c8226a9f7f4d5229aa60a72518a463609dbd006006459ea7d1b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ff895efa2df2750c7302c2ff0732a89bcc57bec2684f9a24cf11aa1c2440beb2",
+				"dweb:/ipfs/QmYnwMpLBiZLVQcPtdbotsvaQ56ZeTm9jA1z7bUeZ2Jmfq"
+			]
+		}
+	},
+	"version": 1
+}
